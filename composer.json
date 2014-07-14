@@ -6,12 +6,6 @@
 	"autoload": {
 		"classmap": ["src/"]
 	},
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/wp-pay/core"
-		}
-	],
 	"require": {
 		"wp-pay/core": "dev-develop"
 	},
