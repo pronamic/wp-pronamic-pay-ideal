@@ -6,14 +6,8 @@
 	"autoload": {
 		"classmap": ["src/"]
 	},
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/wp-pay/core"
-		}
-	],
 	"require": {
-		"wp-pay/core": "dev-develop"
+		"wp-pay/core": "~1.0.0"
 	},
 	"require-dev": {
 		"satooshi/php-coveralls": "dev-master"
