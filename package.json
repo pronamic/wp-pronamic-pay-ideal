@@ -1,6 +1,6 @@
 {
   "name": "ideal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "iDEAL driver for the WordPress payment processing library.",
   "repository": {
     "type": "git",
