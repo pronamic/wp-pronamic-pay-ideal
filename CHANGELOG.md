@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.0
+*	Added an utlity class wich can create purchase ID's.
+
 ## 1.0.1
 *	Changed WordPress pay core library requirment from ~1.0.0 to >=1.0.0.
 
