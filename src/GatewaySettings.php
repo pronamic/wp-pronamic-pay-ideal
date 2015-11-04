@@ -19,7 +19,11 @@ class Pronamic_WP_Pay_Gateways_IDeal_GatewaySettings extends Pronamic_WP_Pay_Gat
 		// iDEAL
 		$sections['ideal'] = array(
 			'title'   => __( 'iDEAL', 'pronamic_ideal' ),
-			'methods' => array( 'ideal_basic', 'ideal_advanced', 'ideal_advanced_v3' ),
+			'methods' => array(
+				'ideal_basic',
+				'ideal_advanced',
+				'ideal_advanced_v3',
+			),
 		);
 
 		// Return
@@ -29,6 +33,7 @@ class Pronamic_WP_Pay_Gateways_IDeal_GatewaySettings extends Pronamic_WP_Pay_Gat
 	public function fields( array $fields ) {
 		// Merchant ID
 		$fields[] = array(
+			'filter'      => FILTER_SANITIZE_STRING,
 			'section'     => 'ideal',
 			'meta_key'    => '_pronamic_gateway_ideal_merchant_id',
 			'title'       => __( 'Merchant ID', 'pronamic_ideal' ),
@@ -40,6 +45,7 @@ class Pronamic_WP_Pay_Gateways_IDeal_GatewaySettings extends Pronamic_WP_Pay_Gat
 
 		// Sub ID
 		$fields[] = array(
+			'filter'      => FILTER_SANITIZE_STRING,
 			'section'     => 'ideal',
 			'meta_key'    => '_pronamic_gateway_ideal_sub_id',
 			'name'        => 'subId',
@@ -53,6 +59,7 @@ class Pronamic_WP_Pay_Gateways_IDeal_GatewaySettings extends Pronamic_WP_Pay_Gat
 
 		// Purchase ID
 		$fields[] = array(
+			'filter'      => FILTER_SANITIZE_STRING,
 			'section'     => 'ideal',
 			'meta_key'    => '_pronamic_gateway_ideal_purchase_id',
 			'title'       => __( 'Purchase ID', 'pronamic_ideal' ),
