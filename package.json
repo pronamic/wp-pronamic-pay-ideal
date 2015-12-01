@@ -11,16 +11,16 @@
     "advanced"
   ],
   "author": "Pronamic",
-  "license": "GPLv2",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/wp-pay-gateways/ideal/issues"
   },
   "homepage": "https://github.com/wp-pay-gateways/ideal",
   "devDependencies": {
-    "grunt-phpcs": "^0.2.2",
+    "grunt-phpcs": "^0.4.0",
     "grunt-phplint": "0.0.5",
-    "grunt-phpmd": "^0.1.0",
+    "grunt-phpmd": "^0.1.1",
     "grunt": "^0.4.5",
-    "grunt-phpunit": "^0.3.3"
+    "grunt-phpunit": "^0.3.6"
   }
 }

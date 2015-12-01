@@ -31,11 +31,11 @@ class Pronamic_WP_Pay_Gateways_IDeal_Util {
 
 		// Make sure there is an dynamic part in the purchase ID
 		// @see http://pronamic.nl/wp-content/uploads/2011/12/iDEAL_Basic_EN_v2.3.pdf
-		if ( 0 == $count ) {
+		if ( 0 === $count ) {
 			$purchase_id .= $payment->get_id();
 		}
 
-		// Return
+		// Return purchase ID
 		return $purchase_id;
 	}
 }

@@ -26,7 +26,7 @@ class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySet
 			),
 		);
 
-		// Return
+		// Return sections
 		return $sections;
 	}
 
@@ -89,7 +89,7 @@ class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySet
 			),
 		);
 
-		// Return
+		// Return fields
 		return $fields;
 	}
 }
