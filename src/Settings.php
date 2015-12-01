@@ -9,7 +9,7 @@
  * @version 1.2.0
  * @since 1.2.0
  */
-class Pronamic_WP_Pay_Gateways_IDeal_GatewaySettings extends Pronamic_WP_Pay_GatewaySettings {
+class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySettings {
 	public function __construct() {
 		add_filter( 'pronamic_pay_gateway_sections', array( $this, 'sections' ) );
 		add_filter( 'pronamic_pay_gateway_fields', array( $this, 'fields' ) );
@@ -40,7 +40,11 @@ class Pronamic_WP_Pay_Gateways_IDeal_GatewaySettings extends Pronamic_WP_Pay_Gat
 			'type'        => 'text',
 			'classes'     => array( 'code' ),
 			'description' => __( 'You receive the merchant ID (also known as: acceptant ID) from your iDEAL provider.', 'pronamic_ideal' ),
-			'methods'     => array( 'ideal_basic', 'ideal_advanced', 'ideal_advanced_v3' ),
+			'methods'     => array(
+				'ideal_basic',
+				'ideal_advanced',
+				'ideal_advanced_v3',
+			),
 		);
 
 		// Sub ID
@@ -54,7 +58,11 @@ class Pronamic_WP_Pay_Gateways_IDeal_GatewaySettings extends Pronamic_WP_Pay_Gat
 			'type'        => 'text',
 			'classes'     => array( 'small-text', 'code' ),
 			'description' => sprintf( __( 'You receive the sub ID from your iDEAL provider, the default is: %s.', 'pronamic_ideal' ), 0 ),
-			'methods'     => array( 'ideal_basic', 'ideal_advanced', 'ideal_advanced_v3' ),
+			'methods'     => array(
+				'ideal_basic',
+				'ideal_advanced',
+				'ideal_advanced_v3',
+			),
 		);
 
 		// Purchase ID
@@ -74,7 +82,11 @@ class Pronamic_WP_Pay_Gateways_IDeal_GatewaySettings extends Pronamic_WP_Pay_Gat
 				sprintf( __( 'Default: <code>%s</code>.', 'pronamic_ideal' ), '{payment_id}' ),
 				sprintf( __( 'Tags: %s', 'pronamic_ideal' ), sprintf( '<code>%s</code> <code>%s</code>', '{order_id}', '{payment_id}' ) )
 			),
-			'methods'     => array( 'ideal_basic', 'ideal_advanced', 'ideal_advanced_v3' ),
+			'methods'     => array(
+				'ideal_basic',
+				'ideal_advanced',
+				'ideal_advanced_v3',
+			),
 		);
 
 		// Return
