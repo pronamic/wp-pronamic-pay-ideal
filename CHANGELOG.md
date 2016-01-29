@@ -7,6 +7,9 @@ This projects adheres to [Semantic Versioning](http://semver.org/) and [Keep a C
 ## [Unreleased][unreleased]
 - Added an gateway settings class.
 
+## [1.1.1] - 2016-01-29
+- Added gateway settings class.
+
 ## [1.1.0] - 2015-03-09
 - Added an utlity class wich can create purchase ID's.
 
