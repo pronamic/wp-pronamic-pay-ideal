@@ -3,8 +3,9 @@
 /**
  * Title: iDEAL utility
  * Description:
- * Copyright: Copyright (c) 2005 - 2015
+ * Copyright: Copyright (c) 2005 - 2016
  * Company: Pronamic
+ *
  * @author Remco Tolsma
  * @version 1.0.0
  */
@@ -31,11 +32,11 @@ class Pronamic_WP_Pay_Gateways_IDeal_Util {
 
 		// Make sure there is an dynamic part in the purchase ID
 		// @see http://pronamic.nl/wp-content/uploads/2011/12/iDEAL_Basic_EN_v2.3.pdf
-		if ( 0 == $count ) {
+		if ( 0 === $count ) {
 			$purchase_id .= $payment->get_id();
 		}
 
-		// Return
+		// Return purchase ID
 		return $purchase_id;
 	}
 }
