@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 This projects adheres to [Semantic Versioning](http://semver.org/) and [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## [Unreleased][unreleased]
+-
+
+## [1.1.2] - 2016-03-02
 - Added an gateway settings class.
 
 ## [1.1.1] - 2016-01-29
