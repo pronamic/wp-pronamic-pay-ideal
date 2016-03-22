@@ -4,26 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "61c61967ddd0e726e29a0cd8fc4fe5a6",
-    "content-hash": "59c2b5d66449ff11bcf39669e8f3e082",
+    "hash": "c3adcba3d467910487e20badff65ee0b",
+    "content-hash": "1bd227a2726dd515e682016e3e3ad3f6",
     "packages": [
         {
             "name": "wp-pay-gateways/common",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-pay-gateways/common.git",
-                "reference": "954bdea818e682bf85ca47a81b5c08d73282a1ae"
+                "reference": "f55f2c0bb06eaebf47a63505740a7a331eb4724f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-pay-gateways/common/zipball/954bdea818e682bf85ca47a81b5c08d73282a1ae",
-                "reference": "954bdea818e682bf85ca47a81b5c08d73282a1ae",
+                "url": "https://api.github.com/repos/wp-pay-gateways/common/zipball/f55f2c0bb06eaebf47a63505740a7a331eb4724f",
+                "reference": "f55f2c0bb06eaebf47a63505740a7a331eb4724f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4",
-                "wp-pay/core": ">=1.3.0",
+                "wp-pay/core": "^1.3.5",
                 "xrstf/composer-php52": "1.*"
             },
             "require-dev": {
@@ -31,7 +31,7 @@
                 "satooshi/php-coveralls": "^0.7.1",
                 "squizlabs/php_codesniffer": "^2.2.0",
                 "wp-cli/wp-cli": "^0.21.1",
-                "wp-coding-standards/wpcs": "0.8.0"
+                "wp-coding-standards/wpcs": "0.9.0"
             },
             "type": "library",
             "autoload": {
@@ -67,20 +67,20 @@
                 "wordpress",
                 "wp"
             ],
-            "time": "2016-03-02 07:19:44"
+            "time": "2016-03-22 12:34:20"
         },
         {
             "name": "wp-pay/core",
-            "version": "1.3.4",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-pay/core.git",
-                "reference": "24ce9a374a90d462bc5c321133beb71029fb7a70"
+                "reference": "6d29e36e13f919b4adad939a1ac1e1923749fddc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-pay/core/zipball/24ce9a374a90d462bc5c321133beb71029fb7a70",
-                "reference": "24ce9a374a90d462bc5c321133beb71029fb7a70",
+                "url": "https://api.github.com/repos/wp-pay/core/zipball/6d29e36e13f919b4adad939a1ac1e1923749fddc",
+                "reference": "6d29e36e13f919b4adad939a1ac1e1923749fddc",
                 "shasum": ""
             },
             "require": {
@@ -92,7 +92,7 @@
                 "satooshi/php-coveralls": "^0.7.1",
                 "squizlabs/php_codesniffer": "^2.2.0",
                 "wp-cli/wp-cli": "^0.21.1",
-                "wp-coding-standards/wpcs": "0.8.0"
+                "wp-coding-standards/wpcs": "0.9.0"
             },
             "type": "library",
             "autoload": {
@@ -128,7 +128,7 @@
                 "wordpress",
                 "wp"
             ],
-            "time": "2016-03-02 07:13:46"
+            "time": "2016-03-22 12:29:58"
         },
         {
             "name": "xrstf/composer-php52",
@@ -166,16 +166,16 @@
     "packages-dev": [
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.1.1",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c"
+                "reference": "d094e337976dff9d8e2424e8485872194e768662"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c6851d6e48f63b69357cbfa55bca116448140e0c",
-                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d094e337976dff9d8e2424e8485872194e768662",
+                "reference": "d094e337976dff9d8e2424e8485872194e768662",
                 "shasum": ""
             },
             "require": {
@@ -191,7 +191,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.1-dev"
+                    "dev-master": "6.2-dev"
                 }
             },
             "autoload": {
@@ -224,20 +224,20 @@
                 "rest",
                 "web service"
             ],
-            "time": "2015-11-23 00:47:50"
+            "time": "2016-03-21 20:02:09"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
-                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/bb9024c526b22f3fe6ae55a561fd70653d470aa8",
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8",
                 "shasum": ""
             },
             "require": {
@@ -275,7 +275,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2015-10-15 22:28:00"
+            "time": "2016-03-08 01:15:46"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -649,7 +649,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
