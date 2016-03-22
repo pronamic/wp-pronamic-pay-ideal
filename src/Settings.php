@@ -19,15 +19,15 @@ class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySet
 	public function sections( array $sections ) {
 		// iDEAL
 		$sections['ideal'] = array(
-			'title'   => __( 'iDEAL', 'pronamic_ideal' ),
-			'methods' => array( 'ideal' ),
+			'title'       => __( 'iDEAL', 'pronamic_ideal' ),
+			'methods'     => array( 'ideal' ),
 			'description' => __( 'Account details are provided by the payment provider after registration. These settings need to match with the payment provider dashboard.', 'pronamic_ideal' ),
 		);
 
 		// Advanced
 		$sections['ideal_advanced'] = array(
-			'title'   => __( 'Advanced', 'pronamic_ideal' ),
-			'methods' => array( 'ideal' ),
+			'title'       => __( 'Advanced', 'pronamic_ideal' ),
+			'methods'     => array( 'ideal' ),
 			'description' => __( 'Optional settings for advanced usage only.', 'pronamic_ideal' ),
 		);
 
