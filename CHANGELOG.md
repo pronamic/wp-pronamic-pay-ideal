@@ -7,6 +7,9 @@ This projects adheres to [Semantic Versioning](http://semver.org/) and [Keep a C
 ## [Unreleased][unreleased]
 -
 
+## [1.1.5] - 2016-10-20
+- Removed Pronamic_WP_Pay_Gateways_IDeal_Util, no longer used.
+
 ## [1.1.4] - 2016-06-08
 - Removed the `$data` parameter in the `get_purchase_id` function.
 
@@ -28,7 +31,8 @@ This projects adheres to [Semantic Versioning](http://semver.org/) and [Keep a C
 ## 1.0.0 - 2015-01-19
 - First release.
 
-[unreleased]: https://github.com/wp-pay-gateways/ideal/compare/1.1.4...HEAD
+[unreleased]: https://github.com/wp-pay-gateways/ideal/compare/1.1.5...HEAD
+[1.1.5]: https://github.com/wp-pay-gateways/ideal/compare/1.1.4...1.1.5
 [1.1.4]: https://github.com/wp-pay-gateways/ideal/compare/1.1.3...1.1.4
 [1.1.3]: https://github.com/wp-pay-gateways/ideal/compare/1.1.2...1.1.3
 [1.1.2]: https://github.com/wp-pay-gateways/ideal/compare/1.1.1...1.1.2
