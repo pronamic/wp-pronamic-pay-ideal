@@ -3,6 +3,7 @@
 	"description": "iDEAL driver for the WordPress payment processing library.",
 	"keywords": ["wordpress", "wp", "pay", "ideal", "gateway", "pronamic"],
 	"homepage": "https://github.com/wp-pay-gateways/ideal",
+	"license": "GPL-3.0-or-later" ,
 	"autoload": {
 		"classmap": ["src/"]
 	},
