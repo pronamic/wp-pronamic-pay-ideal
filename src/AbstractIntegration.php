@@ -1,5 +1,9 @@
 <?php
 
+namespace Pronamic\WordPress\Pay\Gateways\IDeal;
+
+use Pronamic\WordPress\Pay\Gateways\Common\AbstractIntegration as Common_AbstractIntegration;
+
 /**
  * Title: iDEAL abstract integration
  * Description:
@@ -10,9 +14,9 @@
  * @version 1.1.2
  * @since 1.1.2
  */
-abstract class Pronamic_WP_Pay_Gateways_IDeal_AbstractIntegration extends Pronamic_WP_Pay_Gateways_AbstractIntegration {
+abstract class AbstractIntegration extends Common_AbstractIntegration {
 	public function get_settings_class() {
-		return 'Pronamic_WP_Pay_Gateways_IDeal_Settings';
+		return __NAMESPACE__ . '\Settings';
 	}
 
 	/**

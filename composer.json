@@ -5,7 +5,9 @@
 	"homepage": "https://github.com/wp-pay-gateways/ideal",
 	"license": "GPL-3.0-or-later" ,
 	"autoload": {
-		"classmap": ["src/"]
+		"psr-4": {
+			"Pronamic\\WordPress\\Pay\\Gateways\\IDeal\\": "src/"
+		}
 	},
 	"require": {
 		"wp-pay/core": "^1.3",

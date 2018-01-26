@@ -1,5 +1,9 @@
 <?php
 
+namespace Pronamic\WordPress\Pay\Gateways\IDeal;
+
+use Pronamic\WordPress\Pay\Core\GatewaySettings;
+
 /**
  * Title: iDEAL gateway settings
  * Description:
@@ -10,7 +14,7 @@
  * @version 1.1.3
  * @since 1.0.0
  */
-class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySettings {
+class Settings extends GatewaySettings {
 	public function __construct() {
 		add_filter( 'pronamic_pay_gateway_sections', array( $this, 'sections' ) );
 		add_filter( 'pronamic_pay_gateway_fields', array( $this, 'fields' ) );
@@ -38,18 +42,18 @@ class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySet
 	public function fields( array $fields ) {
 		// Merchant ID
 		$fields[] = array(
-			'filter'      => FILTER_SANITIZE_STRING,
-			'section'     => 'ideal',
-			'meta_key'    => '_pronamic_gateway_ideal_merchant_id',
-			'title'       => __( 'Merchant ID', 'pronamic_ideal' ),
-			'type'        => 'text',
-			'classes'     => array( 'code' ),
-			'tooltip'     => sprintf(
+			'filter'   => FILTER_SANITIZE_STRING,
+			'section'  => 'ideal',
+			'meta_key' => '_pronamic_gateway_ideal_merchant_id',
+			'title'    => __( 'Merchant ID', 'pronamic_ideal' ),
+			'type'     => 'text',
+			'classes'  => array( 'code' ),
+			'tooltip'  => sprintf(
 				'%s %s.',
 				__( 'Merchant ID (or Acceptant ID)', 'pronamic_ideal' ),
 				__( 'as mentioned in the payment provider dashboard', 'pronamic_ideal' )
 			),
-			'methods'     => array( 'ideal' ),
+			'methods'  => array( 'ideal' ),
 		);
 
 		// Sub ID
