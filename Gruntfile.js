@@ -1,4 +1,6 @@
 module.exports = function( grunt ) {
+	require( 'load-grunt-tasks' )( grunt );
+
 	// Project
 	grunt.initConfig( {
 		// Package
@@ -18,19 +20,18 @@ module.exports = function( grunt ) {
 				],
 			},
 			options: {
-				standard: 'phpcs.ruleset.xml',
+				bin: 'vendor/bin/phpcs',
+				standard: 'phpcs.xml.dist',
 				showSniffCodes: true
 			}
 		},
 
 		// PHPLint
 		phplint: {
-			application: [ 'src/**/*.php', 'test/**/*.php' ],
-			options: {
-				phpArgs: {
-					'-lf': null
-				}
-			}
+			application: [
+				'src/**/*.php',
+				'test/**/*.php'
+			],
 		},
 
 		// PHP Mess Detector
@@ -52,11 +53,6 @@ module.exports = function( grunt ) {
 		    }
 		}
 	} );
-
-	grunt.loadNpmTasks( 'grunt-phpcs' );
-	grunt.loadNpmTasks( 'grunt-phplint' );
-	grunt.loadNpmTasks( 'grunt-phpmd' );
-	grunt.loadNpmTasks( 'grunt-phpunit' );
 
 	// Default task(s).
 	grunt.registerTask( 'default', [ 'phplint', 'phpmd', 'phpcs', 'phpunit' ] );

@@ -9,13 +9,20 @@
 			"Pronamic\\WordPress\\Pay\\Gateways\\IDeal\\": "src/"
 		}
 	},
+	"config": {
+		"platform": {
+			"php": "5.3.3"
+		}
+	},
 	"require": {
-		"wp-pay/core": "^1.3",
-		"wp-pay-gateways/common": "^1.0.2"
+		"php": "^5.3",
+		"wp-pay/core": "^2.0",
+		"wp-pay-gateways/common": "^2.0"
 	},
 	"require-dev": {
-		"satooshi/php-coveralls": "dev-master",
+		"php-coveralls/php-coveralls": "^1.0",
 		"squizlabs/php_codesniffer": "^2.7",
-		"wp-coding-standards/wpcs": "^0.10.0"
+		"wp-coding-standards/wpcs": "^0.14.1",
+		"wimg/php-compatibility": "^8.1"
 	}
 }

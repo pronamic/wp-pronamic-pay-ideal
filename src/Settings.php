@@ -11,7 +11,7 @@ use Pronamic\WordPress\Pay\Core\GatewaySettings;
  * Company: Pronamic
  *
  * @author Remco Tolsma
- * @version 1.1.3
+ * @version 2.0.0
  * @since 1.0.0
  */
 class Settings extends GatewaySettings {
@@ -67,7 +67,11 @@ class Settings extends GatewaySettings {
 			'type'        => 'text',
 			'classes'     => array( 'small-text', 'code' ),
 			'default'     => '0',
-			'description' => sprintf( __( 'Default: <code>%s</code>', 'pronamic_ideal' ), 0 ),
+			'description' => sprintf(
+				/* translators: %s: 0 */
+				__( 'Default: <code>%s</code>', 'pronamic_ideal' ),
+				0
+			),
 			'tooltip'     => sprintf(
 				'%s %s.',
 				__( 'Sub ID', 'pronamic_ideal' ),
@@ -85,6 +89,7 @@ class Settings extends GatewaySettings {
 			'type'        => 'text',
 			'classes'     => array( 'regular-text', 'code' ),
 			'tooltip'     => sprintf(
+				/* translators: %s: <code>purchaseID</code> */
 				__( 'The iDEAL %s parameter.', 'pronamic_ideal' ),
 				sprintf( '<code>%s</code>', 'purchaseID' )
 			),
@@ -97,6 +102,7 @@ class Settings extends GatewaySettings {
 					'{payment_id}'
 				),
 				sprintf(
+					/* translators: %s: {payment_id} */
 					__( 'Default: <code>%s</code>', 'pronamic_ideal' ),
 					'{payment_id}'
 				)
