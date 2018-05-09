@@ -1,16 +1,20 @@
 <?php
 
+namespace Pronamic\WordPress\Pay\Gateways\IDeal;
+
+use Pronamic\WordPress\Pay\Core\GatewaySettings;
+
 /**
  * Title: iDEAL gateway settings
  * Description:
- * Copyright: Copyright (c) 2005 - 2016
+ * Copyright: Copyright (c) 2005 - 2018
  * Company: Pronamic
  *
  * @author Remco Tolsma
- * @version 1.1.3
+ * @version 2.0.0
  * @since 1.0.0
  */
-class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySettings {
+class Settings extends GatewaySettings {
 	public function __construct() {
 		add_filter( 'pronamic_pay_gateway_sections', array( $this, 'sections' ) );
 		add_filter( 'pronamic_pay_gateway_fields', array( $this, 'fields' ) );
@@ -38,18 +42,18 @@ class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySet
 	public function fields( array $fields ) {
 		// Merchant ID
 		$fields[] = array(
-			'filter'      => FILTER_SANITIZE_STRING,
-			'section'     => 'ideal',
-			'meta_key'    => '_pronamic_gateway_ideal_merchant_id',
-			'title'       => __( 'Merchant ID', 'pronamic_ideal' ),
-			'type'        => 'text',
-			'classes'     => array( 'code' ),
-			'tooltip'     => sprintf(
+			'filter'   => FILTER_SANITIZE_STRING,
+			'section'  => 'ideal',
+			'meta_key' => '_pronamic_gateway_ideal_merchant_id',
+			'title'    => __( 'Merchant ID', 'pronamic_ideal' ),
+			'type'     => 'text',
+			'classes'  => array( 'code' ),
+			'tooltip'  => sprintf(
 				'%s %s.',
 				__( 'Merchant ID (or Acceptant ID)', 'pronamic_ideal' ),
 				__( 'as mentioned in the payment provider dashboard', 'pronamic_ideal' )
 			),
-			'methods'     => array( 'ideal' ),
+			'methods'  => array( 'ideal' ),
 		);
 
 		// Sub ID
@@ -63,7 +67,11 @@ class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySet
 			'type'        => 'text',
 			'classes'     => array( 'small-text', 'code' ),
 			'default'     => '0',
-			'description' => sprintf( __( 'Default: <code>%s</code>', 'pronamic_ideal' ), 0 ),
+			'description' => sprintf(
+				/* translators: %s: 0 */
+				__( 'Default: <code>%s</code>', 'pronamic_ideal' ),
+				0
+			),
 			'tooltip'     => sprintf(
 				'%s %s.',
 				__( 'Sub ID', 'pronamic_ideal' ),
@@ -81,6 +89,7 @@ class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySet
 			'type'        => 'text',
 			'classes'     => array( 'regular-text', 'code' ),
 			'tooltip'     => sprintf(
+				/* translators: %s: <code>purchaseID</code> */
 				__( 'The iDEAL %s parameter.', 'pronamic_ideal' ),
 				sprintf( '<code>%s</code>', 'purchaseID' )
 			),
@@ -93,6 +102,7 @@ class Pronamic_WP_Pay_Gateways_IDeal_Settings extends Pronamic_WP_Pay_GatewaySet
 					'{payment_id}'
 				),
 				sprintf(
+					/* translators: %s: {payment_id} */
 					__( 'Default: <code>%s</code>', 'pronamic_ideal' ),
 					'{payment_id}'
 				)

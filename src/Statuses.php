@@ -1,15 +1,17 @@
 <?php
 
+namespace Pronamic\WordPress\Pay\Gateways\IDeal;
+
 /**
  * Title: iDEAL statuses constants
  * Description:
- * Copyright: Copyright (c) 2005 - 2016
+ * Copyright: Copyright (c) 2005 - 2018
  * Company: Pronamic
  *
  * @author Remco Tolsma
- * @version 1.0.0
+ * @version 2.0.0
  */
-class Pronamic_WP_Pay_Gateways_IDeal_Statuses {
+class Statuses {
 	/**
 	 * Status indicator for success
 	 *
