@@ -12,7 +12,7 @@ use WP_UnitTestCase;
  *
  * @author Remco Tolsma
  * @version 2.0.0
- * @see https://www.mollie.nl/support/documentatie/betaaldiensten/ideal/en/
+ * @link https://www.mollie.nl/support/documentatie/betaaldiensten/ideal/en/
  */
 class StatusesTest extends WP_UnitTestCase {
 	/**

@@ -22,7 +22,7 @@ abstract class AbstractIntegration extends Common_AbstractIntegration {
 	/**
 	 * Get required settings for this integration.
 	 *
-	 * @see https://github.com/wp-premium/gravityforms/blob/1.9.16/includes/fields/class-gf-field-multiselect.php#L21-L42
+	 * @link https://github.com/wp-premium/gravityforms/blob/1.9.16/includes/fields/class-gf-field-multiselect.php#L21-L42
 	 * @return array
 	 */
 	public function get_settings() {
