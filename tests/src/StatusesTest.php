@@ -7,12 +7,12 @@ use WP_UnitTestCase;
 /**
  * Title: iDEAL statuses constants tests
  * Description:
- * Copyright: Copyright (c) 2005 - 2018
+ * Copyright: 2005-2019 Pronamic
  * Company: Pronamic
  *
  * @author Remco Tolsma
  * @version 2.0.0
- * @see https://www.mollie.nl/support/documentatie/betaaldiensten/ideal/en/
+ * @link https://www.mollie.nl/support/documentatie/betaaldiensten/ideal/en/
  */
 class StatusesTest extends WP_UnitTestCase {
 	/**
