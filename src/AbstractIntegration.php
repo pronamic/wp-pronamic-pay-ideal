@@ -2,7 +2,7 @@
 
 namespace Pronamic\WordPress\Pay\Gateways\IDeal;
 
-use Pronamic\WordPress\Pay\Gateways\Common\AbstractIntegration as Common_AbstractIntegration;
+use Pronamic\WordPress\Pay\AbstractGatewayIntegration;
 
 /**
  * Title: iDEAL abstract integration
@@ -14,7 +14,7 @@ use Pronamic\WordPress\Pay\Gateways\Common\AbstractIntegration as Common_Abstrac
  * @version 2.0.0
  * @since 1.1.2
  */
-abstract class AbstractIntegration extends Common_AbstractIntegration {
+abstract class AbstractIntegration extends AbstractGatewayIntegration {
 	public function get_settings_fields() {
 		$fields = array();
 
