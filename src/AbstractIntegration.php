@@ -15,6 +15,11 @@ use Pronamic\WordPress\Pay\AbstractGatewayIntegration;
  * @since 1.1.2
  */
 abstract class AbstractIntegration extends AbstractGatewayIntegration {
+	/**
+	 * Get settings fields.
+	 *
+	 * @return array<int, array<string, callable|int|string|bool|array<int|string,int|string>>>
+	 */
 	public function get_settings_fields() {
 		$fields = array();
 
