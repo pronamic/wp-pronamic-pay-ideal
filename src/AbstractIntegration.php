@@ -16,6 +16,20 @@ use Pronamic\WordPress\Pay\AbstractGatewayIntegration;
  */
 abstract class AbstractIntegration extends AbstractGatewayIntegration {
 	/**
+	 * Acquirer URL.
+	 *
+	 * @var string|null
+	 */
+	public $acquirer_url;
+
+	/**
+	 * Acquirer test URL.
+	 *
+	 * @var string|null
+	 */
+	public $acquirer_test_url;
+
+	/**
 	 * Get settings fields.
 	 *
 	 * @return array<int, array<string, callable|int|string|bool|array<int|string,int|string>>>
