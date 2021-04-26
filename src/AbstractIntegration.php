@@ -15,6 +15,25 @@ use Pronamic\WordPress\Pay\AbstractGatewayIntegration;
  * @since 1.1.2
  */
 abstract class AbstractIntegration extends AbstractGatewayIntegration {
+	/**
+	 * Acquirer URL.
+	 *
+	 * @var string|null
+	 */
+	public $acquirer_url;
+
+	/**
+	 * Acquirer test URL.
+	 *
+	 * @var string|null
+	 */
+	public $acquirer_test_url;
+
+	/**
+	 * Get settings fields.
+	 *
+	 * @return array<int, array<string, callable|int|string|bool|array<int|string,int|string>>>
+	 */
 	public function get_settings_fields() {
 		$fields = array();
 
@@ -45,7 +64,7 @@ abstract class AbstractIntegration extends AbstractGatewayIntegration {
 			'classes'     => array( 'small-text', 'code' ),
 			'default'     => '0',
 			'description' => sprintf(
-				/* translators: %s: 0 */
+				/* translators: %s: default code */
 				__( 'Default: <code>%s</code>', 'pronamic_ideal' ),
 				0
 			),
@@ -78,7 +97,7 @@ abstract class AbstractIntegration extends AbstractGatewayIntegration {
 					'{payment_id}'
 				),
 				sprintf(
-					/* translators: %s: {payment_id} */
+					/* translators: %s: default code */
 					__( 'Default: <code>%s</code>', 'pronamic_ideal' ),
 					'{payment_id}'
 				)
