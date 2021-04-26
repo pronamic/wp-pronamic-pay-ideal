@@ -7,6 +7,9 @@ This projects adheres to [Semantic Versioning](http://semver.org/) and [Keep a C
 ## [Unreleased][unreleased]
 -
 
+## [2.1.1] - 2021-04-26
+- Happy 2021.
+
 ## [2.1.0] - 2020-03-19
 - Use new abstract gateway integration.
 
@@ -40,7 +43,8 @@ This projects adheres to [Semantic Versioning](http://semver.org/) and [Keep a C
 ## 1.0.0 - 2015-01-19
 - First release.
 
-[unreleased]: https://github.com/wp-pay-gateways/ideal/compare/2.1.0...HEAD
+[unreleased]: https://github.com/wp-pay-gateways/ideal/compare/2.1.1...HEAD
+[2.1.1]: https://github.com/wp-pay-gateways/ideal/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/wp-pay-gateways/ideal/compare/2.0.1...2.1.0
 [2.0.1]: https://github.com/wp-pay-gateways/ideal/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/wp-pay-gateways/ideal/compare/1.1.5...2.0.0
