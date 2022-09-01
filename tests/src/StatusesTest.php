@@ -25,12 +25,12 @@ class StatusesTest extends WP_UnitTestCase {
 	}
 
 	public function status_matrix_provider() {
-		return array(
-			array( Statuses::SUCCESS, 'Success' ),
-			array( Statuses::CANCELLED, 'Cancelled' ),
-			array( Statuses::EXPIRED, 'Expired' ),
-			array( Statuses::FAILURE, 'Failure' ),
-			array( Statuses::OPEN, 'Open' ),
-		);
+		return [
+			[ Statuses::SUCCESS, 'Success' ],
+			[ Statuses::CANCELLED, 'Cancelled' ],
+			[ Statuses::EXPIRED, 'Expired' ],
+			[ Statuses::FAILURE, 'Failure' ],
+			[ Statuses::OPEN, 'Open' ],
+		];
 	}
 }
