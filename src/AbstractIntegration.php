@@ -35,25 +35,25 @@ abstract class AbstractIntegration extends AbstractGatewayIntegration {
 	 * @return array<int, array<string, callable|int|string|bool|array<int|string,int|string>>>
 	 */
 	public function get_settings_fields() {
-		$fields = array();
+		$fields = [];
 
 		// Merchant ID
-		$fields[] = array(
+		$fields[] = [
 			'section'  => 'general',
 			'filter'   => FILTER_SANITIZE_STRING,
 			'meta_key' => '_pronamic_gateway_ideal_merchant_id',
 			'title'    => __( 'Merchant ID', 'pronamic_ideal' ),
 			'type'     => 'text',
-			'classes'  => array( 'code' ),
+			'classes'  => [ 'code' ],
 			'tooltip'  => sprintf(
 				'%s %s.',
 				__( 'Merchant ID (or Acceptant ID)', 'pronamic_ideal' ),
 				__( 'as mentioned in the payment provider dashboard', 'pronamic_ideal' )
 			),
-		);
+		];
 
 		// Sub ID
-		$fields[] = array(
+		$fields[] = [
 			'section'     => 'advanced',
 			'filter'      => FILTER_SANITIZE_STRING,
 			'meta_key'    => '_pronamic_gateway_ideal_sub_id',
@@ -61,7 +61,7 @@ abstract class AbstractIntegration extends AbstractGatewayIntegration {
 			'id'          => 'pronamic_ideal_sub_id',
 			'title'       => __( 'Sub ID', 'pronamic_ideal' ),
 			'type'        => 'text',
-			'classes'     => array( 'small-text', 'code' ),
+			'classes'     => [ 'small-text', 'code' ],
 			'default'     => '0',
 			'description' => sprintf(
 				/* translators: %s: default code */
@@ -73,16 +73,16 @@ abstract class AbstractIntegration extends AbstractGatewayIntegration {
 				__( 'Sub ID', 'pronamic_ideal' ),
 				__( 'as mentioned in the payment provider dashboard', 'pronamic_ideal' )
 			),
-		);
+		];
 
 		// Purchase ID
-		$fields[] = array(
+		$fields[] = [
 			'section'     => 'advanced',
 			'filter'      => FILTER_SANITIZE_STRING,
 			'meta_key'    => '_pronamic_gateway_ideal_purchase_id',
 			'title'       => __( 'Purchase ID', 'pronamic_ideal' ),
 			'type'        => 'text',
-			'classes'     => array( 'regular-text', 'code' ),
+			'classes'     => [ 'regular-text', 'code' ],
 			'tooltip'     => sprintf(
 				/* translators: %s: <code>purchaseID</code> */
 				__( 'The iDEAL %s parameter.', 'pronamic_ideal' ),
@@ -102,7 +102,7 @@ abstract class AbstractIntegration extends AbstractGatewayIntegration {
 					'{payment_id}'
 				)
 			),
-		);
+		];
 
 		// Return fields
 		return $fields;
