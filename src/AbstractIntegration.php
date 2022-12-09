@@ -40,7 +40,6 @@ abstract class AbstractIntegration extends AbstractGatewayIntegration {
 		// Merchant ID
 		$fields[] = [
 			'section'  => 'general',
-			'filter'   => FILTER_SANITIZE_STRING,
 			'meta_key' => '_pronamic_gateway_ideal_merchant_id',
 			'title'    => __( 'Merchant ID', 'pronamic_ideal' ),
 			'type'     => 'text',
@@ -55,7 +54,6 @@ abstract class AbstractIntegration extends AbstractGatewayIntegration {
 		// Sub ID
 		$fields[] = [
 			'section'     => 'advanced',
-			'filter'      => FILTER_SANITIZE_STRING,
 			'meta_key'    => '_pronamic_gateway_ideal_sub_id',
 			'name'        => 'subId',
 			'id'          => 'pronamic_ideal_sub_id',
@@ -78,7 +76,6 @@ abstract class AbstractIntegration extends AbstractGatewayIntegration {
 		// Purchase ID
 		$fields[] = [
 			'section'     => 'advanced',
-			'filter'      => FILTER_SANITIZE_STRING,
 			'meta_key'    => '_pronamic_gateway_ideal_purchase_id',
 			'title'       => __( 'Purchase ID', 'pronamic_ideal' ),
 			'type'        => 'text',
