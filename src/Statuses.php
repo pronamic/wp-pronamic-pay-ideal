@@ -46,4 +46,24 @@ class Statuses {
 	 * @var string
 	 */
 	const OPEN = 'Open';
+
+	/**
+	 * Check if status is valid.
+	 *
+	 * @param string $status Status to validate.
+	 * @return bool
+	 */
+	public static function is_valid( $status ): bool {
+		return \in_array(
+			$status,
+			[
+				self::SUCCESS,
+				self::CANCELLED,
+				self::EXPIRED,
+				self::FAILURE,
+				self::OPEN,
+			],
+			true
+		);
+	}
 }
