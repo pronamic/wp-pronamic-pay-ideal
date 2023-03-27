@@ -7,6 +7,18 @@ This projects adheres to [Semantic Versioning](http://semver.org/) and [Keep a C
 ## [Unreleased][unreleased]
 -
 
+## [4.1.2] - 2023-03-27
+
+### Commits
+
+- Using version ^1.3 for pronamic/wp-deployer. ([6e09836](https://github.com/pronamic/wp-pronamic-pay-ideal/commit/6e09836911e95865d39aee24d4b84b075cdee35a))
+- Set Composer type to `wordpress-plugin`. ([0b7919f](https://github.com/pronamic/wp-pronamic-pay-ideal/commit/0b7919ff13bf88405b5c87fa9aff32d257461660))
+- Updated .gitattributes ([837b24b](https://github.com/pronamic/wp-pronamic-pay-ideal/commit/837b24b25a0552b59bf4591788be736751ba6c8f))
+
+Full set of changes: [`4.1.1...4.1.2`][4.1.2]
+
+[4.1.2]: https://github.com/pronamic/wp-pronamic-pay-ideal/compare/v4.1.1...v4.1.2
+
 ## [4.1.1] - 2023-01-31
 ### Composer
 
