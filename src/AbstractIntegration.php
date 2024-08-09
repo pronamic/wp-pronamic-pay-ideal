@@ -7,7 +7,7 @@ use Pronamic\WordPress\Pay\AbstractGatewayIntegration;
 /**
  * Title: iDEAL abstract integration
  * Description:
- * Copyright: 2005-2023 Pronamic
+ * Copyright: 2005-2024 Pronamic
  * Company: Pronamic
  *
  * @author  Remco Tolsma
