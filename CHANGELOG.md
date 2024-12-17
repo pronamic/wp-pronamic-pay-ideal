@@ -7,6 +7,16 @@ This projects adheres to [Semantic Versioning](http://semver.org/) and [Keep a C
 ## [Unreleased][unreleased]
 -
 
+## [4.1.4] - 2024-12-17
+
+### Commits
+
+- Happy 2024. ([60c4beb](https://github.com/pronamic/wp-pronamic-pay-ideal/commit/60c4beb8953664a7f816e7c12948730e081e7d75))
+
+Full set of changes: [`4.1.3...4.1.4`][4.1.4]
+
+[4.1.4]: https://github.com/pronamic/wp-pronamic-pay-ideal/compare/v4.1.3...v4.1.4
+
 ## [4.1.3] - 2023-06-01
 
 ### Commits
